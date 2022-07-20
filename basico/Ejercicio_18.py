@@ -7,14 +7,18 @@
     pero hacerla nosotros mismos es un muy buen ejercicio).
 """
 
-def max():
+def maximo():
     x = int(input('Introduce un valor para la variable x:....'))
     y = int(input('Introduce un valor para la variable y:....'))
 
     if x > y:
         return print(f'La variable "x" {x} es mayor que la variable "y" {y}')
+    elif x < y:
+        return print(f'La variable "y" {y} es mayor que la variable "x" {x}')
     else:
-        return print(f'La variable "x" {x} es mayor que la variable "y" {y}')
+        return 'La variable "x" {x} es mayor que la variable "y" {y}'
+
+maximo()
 
 # EJERCICIO 2
 
@@ -36,6 +40,7 @@ def max_de_tres():
         return print(f'La variable "y" {y} es mayor que las variables "x" {x} y "z" {z}')
     else:        
         return print(f'La variable "z" {z} es mayor que las variables "x" {x} e "y" {y}')
+max_de_tres()
 
 # EJERCICIO 3
 
