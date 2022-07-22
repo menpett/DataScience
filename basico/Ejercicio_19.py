@@ -9,7 +9,7 @@ def inversa(cadena):
     cadena = str(cadena)
     print(cadena[::-1])
 
-inversa('estoy probando')
+# inversa('estoy probando')
 
 
 # Ejercicio 2
@@ -28,7 +28,7 @@ def es_palindromo(cadena):
     else:
         return print(f'La palabra {cadena} no es palindromo')
 
-es_palindromo('radar')
+# es_palindromo('radar')
 
 # Ejercicio 3
 
@@ -40,11 +40,15 @@ es_palindromo('radar')
 
 def superposicion(lista1, lista2):
     for i in lista1:
-        print(i)
-        if i in lista2:
-            return print(f'El carácter "{i}" es común en ambas listas')
-        
+        # Estructura for anidada
+        for i1 in lista2:                
+            if i == i1:
+                return True
+                # print(f'El carácter "{i}" es común en ambas listas')
+            
 
-    return print(f'Las listas no tienen carácteres comunes')
+    return False 
+    # print(f'Las listas no tienen carácteres comunes')
 
-superposicion([98,8,6,'a','mi',10], ['lista2','mi',2,10,'mi'])
+respuesta3 = superposicion([98,8,6,'a','mi',20], ['lista2','mi',2,10,'mi'])
+print(respuesta3)
